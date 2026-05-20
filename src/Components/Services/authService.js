@@ -3,7 +3,7 @@ import instance from "./axios";
 
 
 const Register = async (formData) =>{
-    try {
+    try { 
         const result = await instance.post("https://api.freeapi.app/api/v1/users/register", formData);
         console.log(result);
         return result;
@@ -13,7 +13,7 @@ const Register = async (formData) =>{
 };
 const loginUser=async(formData)=>{
     try {
-        const result=await instance.post("https://api.freeapi.app/api/v1/users/login",formData);
+        const result=await instance.post("https://api.freeapi.app/api/v1/users/login/",formData);
     
         return result
     } catch (error) {
