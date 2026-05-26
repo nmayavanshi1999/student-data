@@ -13,7 +13,7 @@ const Register = async (formData) =>{
 };
 const loginUser=async(formData)=>{
     try {
-        const result=await instance.post("users/login",formData);
+        const result=await instance.post("https://api.freeapi.app/api/v1/users/login",formData);
     
         return result
     } catch (error) {
